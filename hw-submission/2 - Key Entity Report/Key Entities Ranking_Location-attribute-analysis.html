@@ -1,0 +1,242 @@
+<html><meta charset='utf-8'>
+<head>
+<a name='top'/>
+<title>Key Location - Where Attribute Analysis</title>
+<link rel='stylesheet' type='text/css' href='Key Entities Ranking-style-sheet.css'/>
+<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css'/>
+<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/buttons/1.7.1/css/buttons.dataTables.min.css'/>
+<script type = 'text/javascript' src = 'https://code.jquery.com/jquery-3.5.1.min.js'></script>
+<script type = 'text/javascript' src = 'https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js'></script>
+<script type = 'text/javascript' src = 'https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js'></script>
+<script type = 'text/javascript' src = 'https://cdn.datatables.net/buttons/1.7.1/js/buttons.html5.min.js'></script>
+<script type='text/javascript' language='javascript' src='RankedTables.js'></script>
+<script type='text/javascript' language='javascript' src='Chart.js'></script>
+</head>
+<h1>Key Location - Where Attribute Analysis</h1>
+<blockquote>
+<p>These are tables that analyze the distribution of attribute values in the nodeset.</p>
+<h2>Continuous Attribute Analysis</h2>
+<blockquote>
+<h3>General Statistics</h3>
+<p>This table shows statistics for the values of each continuous attribute. A missing attribute value is treated as a zero.</p>
+<table class='measures-ranked'>
+<col width='200px'/>
+<col width='200px'/>
+<col width='200px'/>
+<col width='200px'/>
+<col width='200px'/>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr>
+<td>frequency</td>
+<td>1</td>
+<td>4.444</td>
+<td>27</td>
+<td>8.029</td>
+</tr>
+</table>
+<h3>Correlation Table</h3>
+<p>This table contains the correlations between the continuous attributes and measures. A missing attribute value is treated as a zero.</p>
+<table class='measures-ranked'>
+<col width='200px'/>
+<col width='200px'/>
+<col width='200px'/>
+<thead>
+<tr>
+<th>Measure</th>
+<th>Measure Inputs</th>
+<th>frequency</th>
+</tr>
+</thead>
+<tr>
+<td>Total Degree Centrality</td>
+<td>Location x Location</td>
+<td>0.693</td>
+</tr>
+<tr>
+<td>Out-Degree Centrality</td>
+<td>Location x Location</td>
+<td>0.693</td>
+</tr>
+<tr>
+<td>In-Degree Centrality</td>
+<td>Location x Location</td>
+<td>0.693</td>
+</tr>
+<tr>
+<td>Centrality, Betweenness</td>
+<td>Location x Location</td>
+<td>0.865</td>
+</tr>
+<tr>
+<td>Ego Betweenness Centrality</td>
+<td>Location x Location</td>
+<td>0.750</td>
+</tr>
+<tr>
+<td>Centrality, Betweenness [inverted=1]</td>
+<td>Location x Location inverted=1</td>
+<td>0.993</td>
+</tr>
+<tr>
+<td>Centrality, Closeness</td>
+<td>Location x Location</td>
+<td>0.389</td>
+</tr>
+<tr>
+<td>Centrality, Closeness [inverted=1]</td>
+<td>Location x Location inverted=1</td>
+<td>0.414</td>
+</tr>
+<tr>
+<td>Centrality, Eigenvector</td>
+<td>Location x Location</td>
+<td>0.575</td>
+</tr>
+<tr>
+<td>Contribution Centrality</td>
+<td>Location x Location</td>
+<td>0.592</td>
+</tr>
+<tr>
+<td>Acts as a Hub (hub centrality)</td>
+<td>Location x Location</td>
+<td>0.575</td>
+</tr>
+<tr>
+<td>Acts as an Authority (authority centrality)</td>
+<td>Location x Location</td>
+<td>0.575</td>
+</tr>
+<tr>
+<td>Structural Holes, Constraint</td>
+<td>Location x Location</td>
+<td>0.122</td>
+</tr>
+<tr>
+<td>Structural Holes, Effective Network Size</td>
+<td>Location x Location</td>
+<td>0.770</td>
+</tr>
+<tr>
+<td>Structural Holes, Efficiency</td>
+<td>Location x Location</td>
+<td>0.410</td>
+</tr>
+<tr>
+<td>PageRank Centrality</td>
+<td>Location x Location</td>
+<td>0.702</td>
+</tr>
+<tr>
+<td>Density, Clustering Coefficient</td>
+<td>Location x Location</td>
+<td>0.055</td>
+</tr>
+<tr>
+<td>Location with exclusive agent (complete exclusivity)</td>
+<td>Agent x Location (transposed)</td>
+<td>0.993</td>
+</tr>
+<tr>
+<td>Location with nearly exclusive agent (exclusivity)</td>
+<td>Agent x Location (transposed)</td>
+<td>0.993</td>
+</tr>
+<tr>
+<td>Location with exclusive organization (complete exclusivity)</td>
+<td>Organization x Location (transposed)</td>
+<td>0.548</td>
+</tr>
+<tr>
+<td>Location with nearly exclusive organization (exclusivity)</td>
+<td>Organization x Location (transposed)</td>
+<td>0.691</td>
+</tr>
+<tr>
+<td>Location with exclusive task (complete exclusivity)</td>
+<td>Task x Location (transposed)</td>
+<td>0.709</td>
+</tr>
+<tr>
+<td>Location with nearly exclusive task (exclusivity)</td>
+<td>Task x Location (transposed)</td>
+<td>0.786</td>
+</tr>
+</table>
+<h3>Histogram</h3>
+<p>This table shows the distribution of values for the attributes across 10 equal-sized bins (e.g. if the attribute values are in the range [3,43] then each bin has size (43 - 3)/10 = 4, and Bin 1 contains values [3,7), Bin 2 contains values [7, 10), and so on to Bin 10 which contains values [40,43] : note the closed interval of Bin 10). The range of values that each bin contains varies by attribute.</p>
+<table>
+<col width='200px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th>Attribute</th>
+<th>Bin 1</th>
+<th>Bin 2</th>
+<th>Bin 3</th>
+<th>Bin 4</th>
+<th>Bin 5</th>
+<th>Bin 6</th>
+<th>Bin 7</th>
+<th>Bin 8</th>
+<th>Bin 9</th>
+<th>Bin 10</th>
+</tr>
+<tr>
+<td>frequency</td>
+<td>77.78%</td>
+<td>11.11%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+</tr>
+</table>
+</blockquote>
+<p><a name="gram_type"></a></p>
+<h2>Categorical Attribute Analysis - Gram_type</h2>
+<blockquote>
+<h3>Histogram</h3>
+<p>This table shows the distribution of values for the attribute.</p>
+<table class='measures-ranked'>
+<col width='200px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Value</th>
+<th>Count</th>
+<th>Percent</th>
+</tr>
+</thead>
+<tr>
+<td>Ngram</td>
+<td>9</td>
+<td>100%</td>
+</tr>
+</table>
+<p>All nodes have the same value, and therefore no measure value distributions are reported.</p>
+</blockquote>
+</blockquote>
+<p><a href="Key Entities Ranking.html">Return to previous page</a></p>
+</html>

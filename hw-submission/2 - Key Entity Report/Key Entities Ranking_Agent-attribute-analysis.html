@@ -1,0 +1,1607 @@
+<html><meta charset='utf-8'>
+<head>
+<a name='top'/>
+<title>Key Agent - Who Attribute Analysis</title>
+<link rel='stylesheet' type='text/css' href='Key Entities Ranking-style-sheet.css'/>
+<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css'/>
+<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/buttons/1.7.1/css/buttons.dataTables.min.css'/>
+<script type = 'text/javascript' src = 'https://code.jquery.com/jquery-3.5.1.min.js'></script>
+<script type = 'text/javascript' src = 'https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js'></script>
+<script type = 'text/javascript' src = 'https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js'></script>
+<script type = 'text/javascript' src = 'https://cdn.datatables.net/buttons/1.7.1/js/buttons.html5.min.js'></script>
+<script type='text/javascript' language='javascript' src='RankedTables.js'></script>
+<script type='text/javascript' language='javascript' src='Chart.js'></script>
+</head>
+<h1>Key Agent - Who Attribute Analysis</h1>
+<blockquote>
+<p>These are tables that analyze the distribution of attribute values in the nodeset.</p>
+<h2>Continuous Attribute Analysis</h2>
+<blockquote>
+<h3>General Statistics</h3>
+<p>This table shows statistics for the values of each continuous attribute. A missing attribute value is treated as a zero.</p>
+<table class='measures-ranked'>
+<col width='200px'/>
+<col width='200px'/>
+<col width='200px'/>
+<col width='200px'/>
+<col width='200px'/>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr>
+<td>frequency</td>
+<td>1</td>
+<td>15.528</td>
+<td>515</td>
+<td>49.229</td>
+</tr>
+</table>
+<h3>Correlation Table</h3>
+<p>This table contains the correlations between the continuous attributes and measures. A missing attribute value is treated as a zero.</p>
+<table class='measures-ranked'>
+<col width='200px'/>
+<col width='200px'/>
+<col width='200px'/>
+<thead>
+<tr>
+<th>Measure</th>
+<th>Measure Inputs</th>
+<th>frequency</th>
+</tr>
+</thead>
+<tr>
+<td>Total Degree Centrality</td>
+<td>Agent x Agent</td>
+<td>0.985</td>
+</tr>
+<tr>
+<td>Out-Degree Centrality</td>
+<td>Agent x Agent</td>
+<td>0.985</td>
+</tr>
+<tr>
+<td>In-Degree Centrality</td>
+<td>Agent x Agent</td>
+<td>0.985</td>
+</tr>
+<tr>
+<td>Centrality, Betweenness</td>
+<td>Agent x Agent</td>
+<td>0.810</td>
+</tr>
+<tr>
+<td>Ego Betweenness Centrality</td>
+<td>Agent x Agent</td>
+<td>-0.152</td>
+</tr>
+<tr>
+<td>Centrality, Betweenness [inverted=1]</td>
+<td>Agent x Agent inverted=1</td>
+<td>0.899</td>
+</tr>
+<tr>
+<td>Centrality, Closeness</td>
+<td>Agent x Agent</td>
+<td>0.043</td>
+</tr>
+<tr>
+<td>Centrality, Closeness [inverted=1]</td>
+<td>Agent x Agent inverted=1</td>
+<td>0.202</td>
+</tr>
+<tr>
+<td>Centrality, Eigenvector</td>
+<td>Agent x Agent</td>
+<td>0.925</td>
+</tr>
+<tr>
+<td>Contribution Centrality</td>
+<td>Agent x Agent</td>
+<td>0.935</td>
+</tr>
+<tr>
+<td>Acts as a Hub (hub centrality)</td>
+<td>Agent x Agent</td>
+<td>0.925</td>
+</tr>
+<tr>
+<td>Acts as an Authority (authority centrality)</td>
+<td>Agent x Agent</td>
+<td>0.925</td>
+</tr>
+<tr>
+<td>Structural Holes, Constraint</td>
+<td>Agent x Agent</td>
+<td>-0.041</td>
+</tr>
+<tr>
+<td>Structural Holes, Effective Network Size</td>
+<td>Agent x Agent</td>
+<td>0.868</td>
+</tr>
+<tr>
+<td>Structural Holes, Efficiency</td>
+<td>Agent x Agent</td>
+<td>0.055</td>
+</tr>
+<tr>
+<td>PageRank Centrality</td>
+<td>Agent x Agent</td>
+<td>0.987</td>
+</tr>
+<tr>
+<td>Density, Clustering Coefficient</td>
+<td>Agent x Agent</td>
+<td>-0.284</td>
+</tr>
+<tr>
+<td>Complete Exclusivity - organization (complete exclusivity)</td>
+<td>Agent x Organization</td>
+<td>0.603</td>
+</tr>
+<tr>
+<td>Specialization - organization (exclusivity)</td>
+<td>Agent x Organization</td>
+<td>0.863</td>
+</tr>
+<tr>
+<td>Complete Exclusivity - task (complete exclusivity)</td>
+<td>Agent x Task</td>
+<td>0.661</td>
+</tr>
+<tr>
+<td>Specialization - task (exclusivity)</td>
+<td>Agent x Task</td>
+<td>0.881</td>
+</tr>
+<tr>
+<td>Complete Exclusivity - location (complete exclusivity)</td>
+<td>Agent x Location</td>
+<td>0.848</td>
+</tr>
+<tr>
+<td>Specialization - location (exclusivity)</td>
+<td>Agent x Location</td>
+<td>0.891</td>
+</tr>
+</table>
+<h3>Histogram</h3>
+<p>This table shows the distribution of values for the attributes across 10 equal-sized bins (e.g. if the attribute values are in the range [3,43] then each bin has size (43 - 3)/10 = 4, and Bin 1 contains values [3,7), Bin 2 contains values [7, 10), and so on to Bin 10 which contains values [40,43] : note the closed interval of Bin 10). The range of values that each bin contains varies by attribute.</p>
+<table>
+<col width='200px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th>Attribute</th>
+<th>Bin 1</th>
+<th>Bin 2</th>
+<th>Bin 3</th>
+<th>Bin 4</th>
+<th>Bin 5</th>
+<th>Bin 6</th>
+<th>Bin 7</th>
+<th>Bin 8</th>
+<th>Bin 9</th>
+<th>Bin 10</th>
+</tr>
+<tr>
+<td>frequency</td>
+<td>95.14%</td>
+<td>2.08%</td>
+<td>1.39%</td>
+<td>0%</td>
+<td>0.69%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+</tr>
+</table>
+</blockquote>
+<p><a name="gram_type"></a></p>
+<h2>Categorical Attribute Analysis - Gram_type</h2>
+<blockquote>
+<h3>Histogram</h3>
+<p>This table shows the distribution of values for the attribute.</p>
+<table class='measures-ranked'>
+<col width='200px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Value</th>
+<th>Count</th>
+<th>Percent</th>
+</tr>
+</thead>
+<tr>
+<td>Ngram</td>
+<td>97</td>
+<td>67%</td>
+</tr>
+<tr>
+<td>Single</td>
+<td>47</td>
+<td>32%</td>
+</tr>
+</table>
+<h3>Measure Distribution Tables</h3>
+<p>These tables show how the measure values are distributed across each group.</p>
+<p>Each table shows the min, mean, max, and std.dev values for members of each group. These group values are also compared with the values of the nodes as a whole (i.e. the population).</p>
+<p>If the group mean measure value is greater than one standard deviation(s) above the population mean, then the group's row is colored <span style='color:red'>red</span>. The row is <span style='color:green'>green</span> if the group mean is within one standard deviation of the population mean. Finally, the row is colored <span style='color:blue'>blue</span> if the group mean is less than one standard deviation(s) below the population mean.</p>
+<h3>Total Degree Centrality, Agent x Agent</h3>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Group</th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr style='color:green'>
+<td style='color:green'>Ngram</td>
+<td style='color:green'>97</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.002</td>
+<td style='color:green'>0.051</td>
+<td style='color:green'>0.006</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Single</td>
+<td style='color:green'>47</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.001</td>
+<td style='color:green'>0.009</td>
+<td style='color:green'>0.002</td>
+</tr>
+</table>
+<table>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th></th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+<tr>
+<th>All nodes</th>
+<td>144</td>
+<td>0</td>
+<td>0.002</td>
+<td>0.051</td>
+<td>0.005</td>
+</tr>
+</table>
+<h3>Out-Degree Centrality, Agent x Agent</h3>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Group</th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr style='color:green'>
+<td style='color:green'>Ngram</td>
+<td style='color:green'>97</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.002</td>
+<td style='color:green'>0.051</td>
+<td style='color:green'>0.006</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Single</td>
+<td style='color:green'>47</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.001</td>
+<td style='color:green'>0.009</td>
+<td style='color:green'>0.002</td>
+</tr>
+</table>
+<table>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th></th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+<tr>
+<th>All nodes</th>
+<td>144</td>
+<td>0</td>
+<td>0.002</td>
+<td>0.051</td>
+<td>0.005</td>
+</tr>
+</table>
+<h3>In-Degree Centrality, Agent x Agent</h3>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Group</th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr style='color:green'>
+<td style='color:green'>Ngram</td>
+<td style='color:green'>97</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.002</td>
+<td style='color:green'>0.051</td>
+<td style='color:green'>0.006</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Single</td>
+<td style='color:green'>47</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.001</td>
+<td style='color:green'>0.009</td>
+<td style='color:green'>0.002</td>
+</tr>
+</table>
+<table>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th></th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+<tr>
+<th>All nodes</th>
+<td>144</td>
+<td>0</td>
+<td>0.002</td>
+<td>0.051</td>
+<td>0.005</td>
+</tr>
+</table>
+<h3>Centrality, Betweenness, Agent x Agent</h3>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Group</th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr style='color:green'>
+<td style='color:green'>Ngram</td>
+<td style='color:green'>97</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.011</td>
+<td style='color:green'>0.134</td>
+<td style='color:green'>0.020</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Single</td>
+<td style='color:green'>47</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.011</td>
+<td style='color:green'>0.079</td>
+<td style='color:green'>0.017</td>
+</tr>
+</table>
+<table>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th></th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+<tr>
+<th>All nodes</th>
+<td>144</td>
+<td>0</td>
+<td>0.011</td>
+<td>0.134</td>
+<td>0.019</td>
+</tr>
+</table>
+<h3>Ego Betweenness Centrality, Agent x Agent</h3>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Group</th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr style='color:green'>
+<td style='color:green'>Ngram</td>
+<td style='color:green'>97</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.394</td>
+<td style='color:green'>1</td>
+<td style='color:green'>0.310</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Single</td>
+<td style='color:green'>47</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.381</td>
+<td style='color:green'>1</td>
+<td style='color:green'>0.274</td>
+</tr>
+</table>
+<table>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th></th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+<tr>
+<th>All nodes</th>
+<td>144</td>
+<td>0</td>
+<td>0.390</td>
+<td>1</td>
+<td>0.299</td>
+</tr>
+</table>
+<h3>Centrality, Betweenness [inverted=1], Agent x Agent inverted=1</h3>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Group</th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr style='color:green'>
+<td style='color:green'>Ngram</td>
+<td style='color:green'>97</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.014</td>
+<td style='color:green'>0.923</td>
+<td style='color:green'>0.094</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Single</td>
+<td style='color:green'>47</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.004</td>
+<td style='color:green'>0.106</td>
+<td style='color:green'>0.016</td>
+</tr>
+</table>
+<table>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th></th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+<tr>
+<th>All nodes</th>
+<td>144</td>
+<td>0</td>
+<td>0.011</td>
+<td>0.923</td>
+<td>0.078</td>
+</tr>
+</table>
+<h3>Centrality, Closeness, Agent x Agent</h3>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Group</th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr style='color:green'>
+<td style='color:green'>Ngram</td>
+<td style='color:green'>97</td>
+<td style='color:green'>3.033e-05</td>
+<td style='color:green'>0.001</td>
+<td style='color:green'>0.001</td>
+<td style='color:green'>1.424e-04</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Single</td>
+<td style='color:green'>47</td>
+<td style='color:green'>3.033e-05</td>
+<td style='color:green'>0.001</td>
+<td style='color:green'>0.001</td>
+<td style='color:green'>2.845e-04</td>
+</tr>
+</table>
+<table>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th></th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+<tr>
+<th>All nodes</th>
+<td>144</td>
+<td>3.033e-05</td>
+<td>0.001</td>
+<td>0.001</td>
+<td>2.013e-04</td>
+</tr>
+</table>
+<h3>Centrality, Closeness [inverted=1], Agent x Agent inverted=1</h3>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Group</th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr style='color:green'>
+<td style='color:green'>Ngram</td>
+<td style='color:green'>97</td>
+<td style='color:green'>3.033e-05</td>
+<td style='color:green'>0.001</td>
+<td style='color:green'>0.001</td>
+<td style='color:green'>1.535e-04</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Single</td>
+<td style='color:green'>47</td>
+<td style='color:green'>3.033e-05</td>
+<td style='color:green'>0.001</td>
+<td style='color:green'>0.001</td>
+<td style='color:green'>2.478e-04</td>
+</tr>
+</table>
+<table>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th></th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+<tr>
+<th>All nodes</th>
+<td>144</td>
+<td>3.033e-05</td>
+<td>0.001</td>
+<td>0.001</td>
+<td>1.895e-04</td>
+</tr>
+</table>
+<h3>Centrality, Eigenvector, Agent x Agent</h3>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Group</th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr style='color:green'>
+<td style='color:green'>Ngram</td>
+<td style='color:green'>97</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.050</td>
+<td style='color:green'>0.806</td>
+<td style='color:green'>0.127</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Single</td>
+<td style='color:green'>47</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.028</td>
+<td style='color:green'>0.218</td>
+<td style='color:green'>0.041</td>
+</tr>
+</table>
+<table>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th></th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+<tr>
+<th>All nodes</th>
+<td>144</td>
+<td>0</td>
+<td>0.043</td>
+<td>0.806</td>
+<td>0.107</td>
+</tr>
+</table>
+<h3>Contribution Centrality, Agent x Agent</h3>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Group</th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr style='color:green'>
+<td style='color:green'>Ngram</td>
+<td style='color:green'>97</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.053</td>
+<td style='color:green'>0.827</td>
+<td style='color:green'>0.124</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Single</td>
+<td style='color:green'>47</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.034</td>
+<td style='color:green'>0.223</td>
+<td style='color:green'>0.045</td>
+</tr>
+</table>
+<table>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th></th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+<tr>
+<th>All nodes</th>
+<td>144</td>
+<td>0</td>
+<td>0.047</td>
+<td>0.827</td>
+<td>0.105</td>
+</tr>
+</table>
+<h3>Acts as a Hub (hub centrality), Agent x Agent</h3>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Group</th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr style='color:green'>
+<td style='color:green'>Ngram</td>
+<td style='color:green'>97</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.050</td>
+<td style='color:green'>0.806</td>
+<td style='color:green'>0.127</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Single</td>
+<td style='color:green'>47</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.028</td>
+<td style='color:green'>0.218</td>
+<td style='color:green'>0.041</td>
+</tr>
+</table>
+<table>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th></th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+<tr>
+<th>All nodes</th>
+<td>144</td>
+<td>0</td>
+<td>0.043</td>
+<td>0.806</td>
+<td>0.107</td>
+</tr>
+</table>
+<h3>Acts as an Authority (authority centrality), Agent x Agent</h3>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Group</th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr style='color:green'>
+<td style='color:green'>Ngram</td>
+<td style='color:green'>97</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.050</td>
+<td style='color:green'>0.806</td>
+<td style='color:green'>0.127</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Single</td>
+<td style='color:green'>47</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.028</td>
+<td style='color:green'>0.218</td>
+<td style='color:green'>0.041</td>
+</tr>
+</table>
+<table>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th></th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+<tr>
+<th>All nodes</th>
+<td>144</td>
+<td>0</td>
+<td>0.043</td>
+<td>0.806</td>
+<td>0.107</td>
+</tr>
+</table>
+<h3>Structural Holes, Constraint, Agent x Agent</h3>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Group</th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr style='color:green'>
+<td style='color:green'>Ngram</td>
+<td style='color:green'>97</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.484</td>
+<td style='color:green'>1</td>
+<td style='color:green'>0.223</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Single</td>
+<td style='color:green'>47</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.420</td>
+<td style='color:green'>1</td>
+<td style='color:green'>0.207</td>
+</tr>
+</table>
+<table>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th></th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+<tr>
+<th>All nodes</th>
+<td>144</td>
+<td>0</td>
+<td>0.463</td>
+<td>1</td>
+<td>0.220</td>
+</tr>
+</table>
+<h3>Structural Holes, Effective Network Size, Agent x Agent</h3>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Group</th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr style='color:green'>
+<td style='color:green'>Ngram</td>
+<td style='color:green'>97</td>
+<td style='color:green'>0</td>
+<td style='color:green'>10.007</td>
+<td style='color:green'>98.039</td>
+<td style='color:green'>14.118</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Single</td>
+<td style='color:green'>47</td>
+<td style='color:green'>0</td>
+<td style='color:green'>9.885</td>
+<td style='color:green'>37.881</td>
+<td style='color:green'>9.488</td>
+</tr>
+</table>
+<table>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th></th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+<tr>
+<th>All nodes</th>
+<td>144</td>
+<td>0</td>
+<td>9.967</td>
+<td>98.039</td>
+<td>12.793</td>
+</tr>
+</table>
+<h3>Structural Holes, Efficiency, Agent x Agent</h3>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Group</th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr style='color:green'>
+<td style='color:green'>Ngram</td>
+<td style='color:green'>97</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.720</td>
+<td style='color:green'>1</td>
+<td style='color:green'>0.155</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Single</td>
+<td style='color:green'>47</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.670</td>
+<td style='color:green'>1</td>
+<td style='color:green'>0.177</td>
+</tr>
+</table>
+<table>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th></th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+<tr>
+<th>All nodes</th>
+<td>144</td>
+<td>0</td>
+<td>0.703</td>
+<td>1</td>
+<td>0.164</td>
+</tr>
+</table>
+<h3>PageRank Centrality, Agent x Agent</h3>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Group</th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr style='color:green'>
+<td style='color:green'>Ngram</td>
+<td style='color:green'>97</td>
+<td style='color:green'>2.176e-04</td>
+<td style='color:green'>0.008</td>
+<td style='color:green'>0.179</td>
+<td style='color:green'>0.023</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Single</td>
+<td style='color:green'>47</td>
+<td style='color:green'>2.176e-04</td>
+<td style='color:green'>0.005</td>
+<td style='color:green'>0.030</td>
+<td style='color:green'>0.006</td>
+</tr>
+</table>
+<table>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th></th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+<tr>
+<th>All nodes</th>
+<td>144</td>
+<td>2.176e-04</td>
+<td>0.007</td>
+<td>0.179</td>
+<td>0.019</td>
+</tr>
+</table>
+<h3>Density, Clustering Coefficient, Agent x Agent</h3>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Group</th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr style='color:green'>
+<td style='color:green'>Ngram</td>
+<td style='color:green'>97</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.669</td>
+<td style='color:green'>1</td>
+<td style='color:green'>0.339</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Single</td>
+<td style='color:green'>47</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.675</td>
+<td style='color:green'>1</td>
+<td style='color:green'>0.310</td>
+</tr>
+</table>
+<table>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th></th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+<tr>
+<th>All nodes</th>
+<td>144</td>
+<td>0</td>
+<td>0.671</td>
+<td>1</td>
+<td>0.330</td>
+</tr>
+</table>
+<h3>Complete Exclusivity - organization (complete exclusivity), Agent x Organization</h3>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Group</th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr style='color:green'>
+<td style='color:green'>Ngram</td>
+<td style='color:green'>97</td>
+<td style='color:green'>0</td>
+<td style='color:green'>3.124e-04</td>
+<td style='color:green'>0.030</td>
+<td style='color:green'>0.003</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Single</td>
+<td style='color:green'>47</td>
+<td style='color:green'>0</td>
+<td style='color:green'>6.447e-04</td>
+<td style='color:green'>0.030</td>
+<td style='color:green'>0.004</td>
+</tr>
+</table>
+<table>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th></th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+<tr>
+<th>All nodes</th>
+<td>144</td>
+<td>0</td>
+<td>4.209e-04</td>
+<td>0.030</td>
+<td>0.004</td>
+</tr>
+</table>
+<h3>Specialization - organization (exclusivity), Agent x Organization</h3>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Group</th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr style='color:green'>
+<td style='color:green'>Ngram</td>
+<td style='color:green'>97</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.002</td>
+<td style='color:green'>0.071</td>
+<td style='color:green'>0.008</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Single</td>
+<td style='color:green'>47</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.001</td>
+<td style='color:green'>0.030</td>
+<td style='color:green'>0.005</td>
+</tr>
+</table>
+<table>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th></th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+<tr>
+<th>All nodes</th>
+<td>144</td>
+<td>0</td>
+<td>0.002</td>
+<td>0.071</td>
+<td>0.007</td>
+</tr>
+</table>
+<h3>Complete Exclusivity - task (complete exclusivity), Agent x Task</h3>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Group</th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr style='color:green'>
+<td style='color:green'>Ngram</td>
+<td style='color:green'>97</td>
+<td style='color:green'>0</td>
+<td style='color:green'>7.930e-04</td>
+<td style='color:green'>0.031</td>
+<td style='color:green'>0.004</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Single</td>
+<td style='color:green'>47</td>
+<td style='color:green'>0</td>
+<td style='color:green'>3.273e-04</td>
+<td style='color:green'>0.015</td>
+<td style='color:green'>0.002</td>
+</tr>
+</table>
+<table>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th></th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+<tr>
+<th>All nodes</th>
+<td>144</td>
+<td>0</td>
+<td>6.410e-04</td>
+<td>0.031</td>
+<td>0.004</td>
+</tr>
+</table>
+<h3>Specialization - task (exclusivity), Agent x Task</h3>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Group</th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr style='color:green'>
+<td style='color:green'>Ngram</td>
+<td style='color:green'>97</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.002</td>
+<td style='color:green'>0.092</td>
+<td style='color:green'>0.010</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Single</td>
+<td style='color:green'>47</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.001</td>
+<td style='color:green'>0.015</td>
+<td style='color:green'>0.003</td>
+</tr>
+</table>
+<table>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th></th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+<tr>
+<th>All nodes</th>
+<td>144</td>
+<td>0</td>
+<td>0.002</td>
+<td>0.092</td>
+<td>0.008</td>
+</tr>
+</table>
+<h3>Complete Exclusivity - location (complete exclusivity), Agent x Location</h3>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Group</th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr style='color:green'>
+<td style='color:green'>Ngram</td>
+<td style='color:green'>97</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.001</td>
+<td style='color:green'>0.111</td>
+<td style='color:green'>0.011</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Single</td>
+<td style='color:green'>47</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0</td>
+</tr>
+</table>
+<table>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th></th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+<tr>
+<th>All nodes</th>
+<td>144</td>
+<td>0</td>
+<td>7.716e-04</td>
+<td>0.111</td>
+<td>0.009</td>
+</tr>
+</table>
+<h3>Specialization - location (exclusivity), Agent x Location</h3>
+<table class='measures-ranked'>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Group</th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr style='color:green'>
+<td style='color:green'>Ngram</td>
+<td style='color:green'>97</td>
+<td style='color:green'>0</td>
+<td style='color:green'>0.002</td>
+<td style='color:green'>0.131</td>
+<td style='color:green'>0.013</td>
+</tr>
+<tr style='color:green'>
+<td style='color:green'>Single</td>
+<td style='color:green'>47</td>
+<td style='color:green'>0</td>
+<td style='color:green'>6.496e-04</td>
+<td style='color:green'>0.015</td>
+<td style='color:green'>0.003</td>
+</tr>
+</table>
+<table>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th></th>
+<th>Size</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+<tr>
+<th>All nodes</th>
+<td>144</td>
+<td>0</td>
+<td>0.002</td>
+<td>0.131</td>
+<td>0.011</td>
+</tr>
+</table>
+</blockquote>
+</blockquote>
+<p><a href="Key Entities Ranking.html">Return to previous page</a></p>
+</html>

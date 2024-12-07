@@ -1,0 +1,242 @@
+<html><meta charset='utf-8'>
+<head>
+<a name='top'/>
+<title>Key Task - What Attribute Analysis</title>
+<link rel='stylesheet' type='text/css' href='Key Entities Ranking-style-sheet.css'/>
+<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css'/>
+<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/buttons/1.7.1/css/buttons.dataTables.min.css'/>
+<script type = 'text/javascript' src = 'https://code.jquery.com/jquery-3.5.1.min.js'></script>
+<script type = 'text/javascript' src = 'https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js'></script>
+<script type = 'text/javascript' src = 'https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js'></script>
+<script type = 'text/javascript' src = 'https://cdn.datatables.net/buttons/1.7.1/js/buttons.html5.min.js'></script>
+<script type='text/javascript' language='javascript' src='RankedTables.js'></script>
+<script type='text/javascript' language='javascript' src='Chart.js'></script>
+</head>
+<h1>Key Task - What Attribute Analysis</h1>
+<blockquote>
+<p>These are tables that analyze the distribution of attribute values in the nodeset.</p>
+<h2>Continuous Attribute Analysis</h2>
+<blockquote>
+<h3>General Statistics</h3>
+<p>This table shows statistics for the values of each continuous attribute. A missing attribute value is treated as a zero.</p>
+<table class='measures-ranked'>
+<col width='200px'/>
+<col width='200px'/>
+<col width='200px'/>
+<col width='200px'/>
+<col width='200px'/>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Min</th>
+<th>Mean</th>
+<th>Max</th>
+<th>Std.dev</th>
+</tr>
+</thead>
+<tr>
+<td>frequency</td>
+<td>1</td>
+<td>2.800</td>
+<td>20</td>
+<td>3.361</td>
+</tr>
+</table>
+<h3>Correlation Table</h3>
+<p>This table contains the correlations between the continuous attributes and measures. A missing attribute value is treated as a zero.</p>
+<table class='measures-ranked'>
+<col width='200px'/>
+<col width='200px'/>
+<col width='200px'/>
+<thead>
+<tr>
+<th>Measure</th>
+<th>Measure Inputs</th>
+<th>frequency</th>
+</tr>
+</thead>
+<tr>
+<td>Total Degree Centrality</td>
+<td>Task x Task</td>
+<td>0.707</td>
+</tr>
+<tr>
+<td>Out-Degree Centrality</td>
+<td>Task x Task</td>
+<td>0.707</td>
+</tr>
+<tr>
+<td>In-Degree Centrality</td>
+<td>Task x Task</td>
+<td>0.707</td>
+</tr>
+<tr>
+<td>Centrality, Betweenness</td>
+<td>Task x Task</td>
+<td>0.621</td>
+</tr>
+<tr>
+<td>Ego Betweenness Centrality</td>
+<td>Task x Task</td>
+<td>0.705</td>
+</tr>
+<tr>
+<td>Centrality, Betweenness [inverted=1]</td>
+<td>Task x Task inverted=1</td>
+<td>0.607</td>
+</tr>
+<tr>
+<td>Centrality, Closeness</td>
+<td>Task x Task</td>
+<td>0.370</td>
+</tr>
+<tr>
+<td>Centrality, Closeness [inverted=1]</td>
+<td>Task x Task inverted=1</td>
+<td>0.374</td>
+</tr>
+<tr>
+<td>Centrality, Eigenvector</td>
+<td>Task x Task</td>
+<td>0.521</td>
+</tr>
+<tr>
+<td>Contribution Centrality</td>
+<td>Task x Task</td>
+<td>0.533</td>
+</tr>
+<tr>
+<td>Acts as a Hub (hub centrality)</td>
+<td>Task x Task</td>
+<td>0.496</td>
+</tr>
+<tr>
+<td>Acts as an Authority (authority centrality)</td>
+<td>Task x Task</td>
+<td>0.496</td>
+</tr>
+<tr>
+<td>Structural Holes, Constraint</td>
+<td>Task x Task</td>
+<td>0.081</td>
+</tr>
+<tr>
+<td>Structural Holes, Effective Network Size</td>
+<td>Task x Task</td>
+<td>0.745</td>
+</tr>
+<tr>
+<td>Structural Holes, Efficiency</td>
+<td>Task x Task</td>
+<td>0.348</td>
+</tr>
+<tr>
+<td>PageRank Centrality</td>
+<td>Task x Task</td>
+<td>0.652</td>
+</tr>
+<tr>
+<td>Density, Clustering Coefficient</td>
+<td>Task x Task</td>
+<td>0.083</td>
+</tr>
+<tr>
+<td>Task with exclusive agent (complete exclusivity)</td>
+<td>Agent x Task (transposed)</td>
+<td>0.646</td>
+</tr>
+<tr>
+<td>Task with nearly exclusive agent (exclusivity)</td>
+<td>Agent x Task (transposed)</td>
+<td>0.780</td>
+</tr>
+<tr>
+<td>Task with exclusive organization (complete exclusivity)</td>
+<td>Organization x Task (transposed)</td>
+<td>0.204</td>
+</tr>
+<tr>
+<td>Task with nearly exclusive organization (exclusivity)</td>
+<td>Organization x Task (transposed)</td>
+<td>0.300</td>
+</tr>
+<tr>
+<td>Task with exclusive location (complete exclusivity)</td>
+<td>Task x Location</td>
+<td>-0.067</td>
+</tr>
+<tr>
+<td>Task with nearly exclusive location (exclusivity)</td>
+<td>Task x Location</td>
+<td>-0.012</td>
+</tr>
+</table>
+<h3>Histogram</h3>
+<p>This table shows the distribution of values for the attributes across 10 equal-sized bins (e.g. if the attribute values are in the range [3,43] then each bin has size (43 - 3)/10 = 4, and Bin 1 contains values [3,7), Bin 2 contains values [7, 10), and so on to Bin 10 which contains values [40,43] : note the closed interval of Bin 10). The range of values that each bin contains varies by attribute.</p>
+<table>
+<col width='200px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<col width='100px'/>
+<tr>
+<th>Attribute</th>
+<th>Bin 1</th>
+<th>Bin 2</th>
+<th>Bin 3</th>
+<th>Bin 4</th>
+<th>Bin 5</th>
+<th>Bin 6</th>
+<th>Bin 7</th>
+<th>Bin 8</th>
+<th>Bin 9</th>
+<th>Bin 10</th>
+</tr>
+<tr>
+<td>frequency</td>
+<td>72.31%</td>
+<td>12.31%</td>
+<td>6.15%</td>
+<td>3.08%</td>
+<td>1.54%</td>
+<td>1.54%</td>
+<td>1.54%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+</tr>
+</table>
+</blockquote>
+<p><a name="gram_type"></a></p>
+<h2>Categorical Attribute Analysis - Gram_type</h2>
+<blockquote>
+<h3>Histogram</h3>
+<p>This table shows the distribution of values for the attribute.</p>
+<table class='measures-ranked'>
+<col width='200px'/>
+<col width='100px'/>
+<col width='100px'/>
+<thead>
+<tr>
+<th>Value</th>
+<th>Count</th>
+<th>Percent</th>
+</tr>
+</thead>
+<tr>
+<td>Single</td>
+<td>65</td>
+<td>100%</td>
+</tr>
+</table>
+<p>All nodes have the same value, and therefore no measure value distributions are reported.</p>
+</blockquote>
+</blockquote>
+<p><a href="Key Entities Ranking.html">Return to previous page</a></p>
+</html>
